@@ -1,0 +1,40 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: aquamarine;
+}
+.middle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.sm-container{
+	text-align: center;
+}
+.sm-container i{
+	color: ghostwhite;
+	padding: 20px;
+	font-size: 20px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.sm-container i:hover{
+	transform: scale(1.5);
+}
+.sm-menu{
+	background: cadetblue;
+	position: absolute;
+	border-radius: 8px;
+	display: none;
+}
+.sm-menu:before{
+	content: "";
+	width: 10px;
+	height: 10px;
+	background: lightblue;
+	position: absolute;
+	left: 50%;
+	top: -5px;
+	transform: translateX(-50%) rotate(45deg);
+}
